@@ -1,0 +1,17 @@
+#
+#
+#
+menuconfig Benchmark_optimize
+
+    config CUSTOM_TIME
+        bool  "benchmark basic optimize"
+        default y
+    help
+        Optimize for some software to get high score, such as antutu benchmark
+
+    config CUSTOM_TIME_ENHANCED
+        bool    "benchmark enhanced optimize"
+        depends on CUSTOM_TIME
+        default n
+    help
+        To get even higher score in antutu benchmark, may result in some side effect for system
